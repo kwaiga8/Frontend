@@ -60,6 +60,7 @@ stage('SonarQube'){
                 }
             }
         }
+  }
     post {
         always{
             junit testResults: "test-results/*.xml"
@@ -70,4 +71,3 @@ stage('SonarQube'){
     
     
   }
-}
