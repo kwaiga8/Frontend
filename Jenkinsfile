@@ -32,7 +32,7 @@ pipeline{
     
 stage('SonarQube'){
       steps{
-     withSonarQubeEnv('Sonarqube') {
+     withSonarQubeEnv('SonarQube') {
     // some block
     sh '${scannerHome}/bin/sonar-scanner'
 }
