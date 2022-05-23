@@ -62,7 +62,7 @@ stage('SonarQube'){
         }
   }
     post {
-        always{
+        always {
             junit testResults: "test-results/*.xml"
             cleanWs()
         }
