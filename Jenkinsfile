@@ -20,7 +20,7 @@ pipeline{
     }
     stage('checkout repo '){
       steps{
-        git branch: 'main', url: 'https://github.com/kwaiga8/Frontend.git'
+          checkout scm
       }
     }
     stage('testy'){
